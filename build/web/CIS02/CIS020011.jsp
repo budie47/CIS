@@ -7,63 +7,25 @@
 
     <!-- Modal -->
     <div class="modal fade" id="CIS020011" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="width: 70%;">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">—</span><span class="sr-only">Close</span></button>
-                    <h3 class="modal-title" id="lineModalLabel">Physical</h3>
+                    <h3 class="modal-title" id="lineModalLabel">Laboratory Result</h3>
                 </div>
                 <div class="modal-body">
 
                     <!-- content goes here -->
                     <form role="form" id="myForm2" method="post">
-                        <div class="form-group">
-                            <textarea type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Insert.." tabindex="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Complaint" tabindex="4">
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                   
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <select name="selector1" id="selector1" class="form-control input-lg">
-                                        <option>Site</option>
-                                        <option>Dolore, ab unde modi est!</option>
-                                        <option>Illum, fuga minus sit eaque.</option>
-                                        <option>Consequatur ducimus maiores voluptatum minima.</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <div class="row">
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <select name="selector1" id="selector1" class="form-control input-lg">
-                                        <option>Duration</option>
-                                        <option>Dolore, ab unde modi est!</option>
-                                        <option>Illum, fuga minus sit eaque.</option>
-                                        <option>Consequatur ducimus maiores voluptatum minima.</option>
-                                    </select>
-                                </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <table class="table table-striped table-filter table-bordered" id="LisTable">
+                                   
+                                </table>
+                               
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <select name="selector1" id="selector1" class="form-control input-lg">
-                                        <option>Laterality</option>
-                                        <option>Dolore, ab unde modi est!</option>
-                                        <option>Illum, fuga minus sit eaque.</option>
-                                        <option>Consequatur ducimus maiores voluptatum minima.</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="email" id="email" class="form-control input-lg" placeholder="Comments" tabindex="4">
                         </div>
 
 
@@ -86,3 +48,9 @@
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        
+
+        
+        </script>

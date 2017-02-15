@@ -21,52 +21,8 @@
 
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
-                                <table class="table table-striped table-filter table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Order No</th>
-                                            <th>Item No</th>
-                                            <th>Item Name</th>
-                                            <th>Report Result</th>
-                                            <th>Result Date</th>
-                                            <th>Reported By</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                            <td>John</td>
-                                            <td>Doe</td>
-                                            <td>john@example.com</td>
-                                        </tr>
-                                      
-                                    </tbody>
+                                <table class="table table-striped table-filter table-bordered" id="risTable">
+                                   
                                 </table>
                                
                             </div>
@@ -92,3 +48,9 @@
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        
+
+        
+        </script>

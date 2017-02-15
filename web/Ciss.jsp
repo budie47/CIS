@@ -52,31 +52,31 @@
                                     </td>
                                     <td>
                                         BloodGroup/G6PD:
-                                        <span class="p-label">Not Stated</span>
+                                        <span class="p-label" id="pBloodType">Not Stated</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Sex:
-                                        <span class="p-label">Perempuan</span>
+                                        <span class="p-label" id="pSex">Perempuan</span>
                                     </td>
                                     <td>
                                         ID Type:
-                                        <span class="p-label">New IC Number</span>
+                                        <span class="p-label" id="pIdType">New IC Number</span>
                                     </td>
                                     <td>
                                         Allergy:
-                                        <span class="p-label">jap lg bgtau</span>
+                                        <span class="p-label" id="pAllergy">jap lg bgtau</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Age:
-                                        <span class="p-label">19 Years</span>
+                                        <span class="p-label" id="pAge">19 Years</span>
                                     </td>
                                     <td>
                                         Race:
-                                        <span class="p-label">Melayu</span>
+                                        <span class="p-label" id="pRace">Melayu</span>
                                     </td>
                                     <td>
                                     </td>

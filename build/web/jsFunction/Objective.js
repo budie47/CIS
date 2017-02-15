@@ -89,6 +89,7 @@ $(document).ready(function () {
 
 $('#queueBtn').click(function(e){
     e.preventDefault();
+    $('#listQueue').load('queue/QueueModal.jsp');
     $('#queueModal').modal('toggle');
 //    $.ajax({
 //        url:'queue/listQueue.jsp',
@@ -803,6 +804,18 @@ $('#queueBtn').click(function(e){
         var sum = 'PE:'+ NotesPE + ' | Comment:' + upObject.PEComment;  
         $('#sum' + rowId).html(sum);
         $("#CIS020009").modal('toggle');
+    });
+    
+    
+
+    
+    $('#RISResult').on('click',function(){
+
+        $.get("CIS02/CIS020010_1.jsp", function (data) {
+            //console.log(data);
+               $('#risTable').html(data);
+
+        });
     });
 
 

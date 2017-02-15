@@ -46,7 +46,7 @@
                   
                   
                   <li id="modalPE"><a data-toggle="modal" data-target="#CIS020009" href="" ><span class="fa fa-sticky-note fa-li"></span> Physical Exam</a></li>
-                  <li><a data-toggle="modal" data-target="#CIS020010" href=""> <i class="fa fa-bolt fa-li"></i> Radiology Result</a></li>
+                  <li><a data-toggle="modal" data-target="#CIS020010" href="" id="RISResult"> <i class="fa fa-bolt fa-li"></i> Radiology Result</a></li>
                   <li><a data-toggle="modal" data-target="#CIS020011" href=""> <i class="fa fa-thermometer-empty fa-li"></i> Laboratory Result</a></li>
                   <li><a data-toggle="modal" data-target="#CIS020012" href=""> <i class="fa fa-eye fa-li"></i> Observation Procedure</a></li>
                 </ul>

@@ -13,8 +13,18 @@ function findPatient(pmiNo){
         },
         timeout:10000,
         success: function(result){
-
-            console.log(result);
+            var DataArry = result.split("|");
+            $('#pName').html(DataArry[1]);
+            $('#pIC').html(DataArry[0].trim());
+            $('#pBloodType').html(DataArry[3]);
+            $('#pSex').html(DataArry[4]);
+            $('#pIdType').html(DataArry[5]);
+            $('#pAllergy').html(DataArry[8]);
+            $('#pAge').html(DataArry[6]);
+            $('#pRace').html(DataArry[7]);
+            
+            
+            console.log(DataArry);
         }
     });
 }
@@ -28,6 +38,7 @@ $(document).ready(function(){
         var  pmiNo = row.find('#pmiNumber').text();
        var patient =  findPatient(pmiNo);
         
+        $('#queueModal').modal('toggle');
         
     });
 });

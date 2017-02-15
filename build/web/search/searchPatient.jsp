@@ -4,6 +4,7 @@
     Author     : -D-
 --%>
 
+<%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
 <%@page import="java.text.DateFormat"%>
 <%@page import="java.text.SimpleDateFormat"%>
@@ -19,10 +20,16 @@
     String bloodType = "";
     String sex = "";
     String IdType = "";
-    String age = "";
+    int age;
     String race = "";
     String allergy = "";
     String dob="";
+    
+Calendar now = Calendar.getInstance(); 
+int year = now.get(Calendar.YEAR);  
+int month = now.get(Calendar.MONTH);
+    
+
     
     //Convert Code to Description
 String sqlPatient = "select pmi_no,patient_name,new_ic_no,blood_type,sex_code,id_type,birth_date,race_code,allergy_ind from emedica.pms_patient_biodata where pmi_no = '"+pmiNo+"'";
@@ -49,16 +56,28 @@ IdType = dataIdType.get(0).get(2);
 race = dataRace.get(0).get(2);
 allergy = dataAllergy.get(0).get(2);
 
+
+
+
 // Get Age from Date of Birth
 
+dob = dataQueue.get(0).get(6).toString();
+String[] dobAr = StringUtils.split(dob,"/");
+int dobYear = Integer.parseInt(dobAr[2]);
+int dobMonth = Integer.parseInt(dobAr[1]);
+
+age = year-dobYear;
+
+String patientBio = dataQueue.get(0).get(0) + "|"+dataQueue.get(0).get(1)+"|"+dataQueue.get(0).get(2)+"|"+bloodType+"|"+sex+"|"+IdType+"|"+age+"|"+race+"|"+allergy;
+
+//session.setAttribute("patientPMINo",dataQueue.get(0).get(0));
+session.setAttribute("patientPMINo","6303190161596");
+
+session.setAttribute("patientBio", patientBio);
 
 
+out.print(patientBio);
 
-
-
-
-out.print(bloodType);
-out.print(sex);
 
 
 %>
